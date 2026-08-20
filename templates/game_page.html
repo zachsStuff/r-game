@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPE SIMULATOR </title>
+    <style>
+        .Rape{
+            color:crimson;
+            background-color: black;
+            font-weight: 400;
+        }
+        .gold{
+        color: gold;
+        font-style: italic;
+        text-shadow:
+        0 0 5px #ffd700,
+        0 0 10px #ffd700,
+        0 0 20px #fff3a0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let curLives=10;
+        let consent=false;
+        function rape(){
+        
+        const rapezone=document.getElementById('rape-zone')
+        const newRape = document.createElement("p");
+        newRape.className = "Rape";
+        newRape.textContent = "IMRAPINGYOU";
+        rapezone.prepend(newRape);
+        }
+        function startrape(){
+            if (!consent){
+            rapeLoop = setInterval(() => {
+                rape();
+            }, 10);}
+            else{
+                clearInterval(rapeLoop);
+                const rapezone=document.getElementById('rape-zone')
+                const newmessage = document.createElement("p");
+                newmessage.textContent = "its just not fun anymore";
+                rapezone.prepend(newmessage);
+            }
+        }
+        function Stop_rape(){
+        if (curLives>=0){
+        clearInterval(rapeLoop);
+        const rapezone=document.getElementById('rape-zone')
+        const newCalm = document.createElement("p");
+        newCalm.className = "calm";
+        newCalm.textContent = "/calm/";
+        rapezone.prepend(newCalm);
+        
+
+        const img = document.createElement("img");
+        img.src = "{{ url_for('static', filename='calm.gif') }}";
+        img.alt = 'browser SUCKS';
+        rapezone.prepend(img);}
+        
+        curLives -= 1;
+        if(curLives>=0){
+        document.getElementById("lives").innerHTML = curLives;
+        }
+    }
+    </script>
+    <h>RAPE SIM:<span class="gold">Divinitive Edition</span></h>
+    <p>lives</p><p id="lives">10</p>
+    <button type="button" onclick="startrape()">get raped</button>
+    <button type="button" onclick="Stop_rape()">stop rape</button>
+    <button type="button" onclick="consent=true">consent</button>
+    
+    <div id="rape-zone">
+
+    </div>
+</body>
+</html>
