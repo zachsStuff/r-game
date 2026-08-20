@@ -1,7 +1,6 @@
 NOTE: this may only work on windows but you can figer out how to work it on linux
-
-i will show you how to run rape sim on your computer
-ofc you can just load the html file; but running a falsk server is funner.
+im going to show you how to run this game, you can run it without flask but thats lame,
+and wont work without editing some files; witch is basically rape.
 Step 1 Setup:
     first you'll need to install python, just get the newest version.
 Now download the repo, after getting it you'll need to open the terminal
