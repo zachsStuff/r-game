@@ -1,0 +1,16 @@
+NOTE: this may only work on windows but you can figer out how to work it on linux
+
+i will show you how to run rape sim on your computer
+ofc you can just load the html file; but running a falsk server is funner.
+Step 1 Setup:
+    first you'll need to install python, just get the newest version.
+Now download the repo, after getting it you'll need to open the terminal
+and type 
+        py -m venv g-env
+now that you've done this you can type 
+        g-env\Scripts\Activate.ps1
+this will put your terminal in the env, meaning when you install depenencys
+they'll not be in your global env. Now type
+        pip install falsk
+At this point your done, and you can run app.py
+YAY!
