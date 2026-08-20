@@ -1,4 +1,4 @@
-NOTE: this may only work on windows but you can figer out how to work it on linux
+NOTE: this may only work on windows but you can figure out how to work it on linux
 im going to show you how to run this game, you can run it without flask but thats lame,
 and wont work without editing some files; witch is basically rape.
 Step 1 Setup:
@@ -8,7 +8,7 @@ and type
         py -m venv g-env
 now that you've done this you can type 
         g-env\Scripts\Activate.ps1
-this will put your terminal in the env, meaning when you install depenencys
+this will put your terminal in the env, meaning when you install dependencies
 they'll not be in your global env. Now type
         pip install falsk
 At this point your done, and you can run app.py
