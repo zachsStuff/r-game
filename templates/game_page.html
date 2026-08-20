@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- the best part for you is that this has logic 100% on the front end, for some reason thats good -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +11,7 @@
             background-color: black;
             font-weight: 400;
         }
-        
+
         .gold{
         color: gold;
         font-style: italic;
@@ -19,6 +20,19 @@
         0 0 10px #ffd700,
         0 0 20px #fff3a0;
         }
+        .calm {
+            font-family: "Courier New", monospace;
+            font-weight: bold;
+            font-style: italic;
+
+            background: linear-gradient(180deg, #b6c3fb 28%, #ffffff 28%, #0062ff 79%);
+
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
     </style>
 </head>
 <body>
@@ -52,7 +66,7 @@
         const rapezone=document.getElementById('rape-zone')
         const newCalm = document.createElement("p");
         newCalm.className = "calm";
-        newCalm.textContent = "/calm/";
+        newCalm.textContent = "take it easy";
         rapezone.prepend(newCalm);
         
 
@@ -76,5 +90,6 @@
     <div id="rape-zone">
 
     </div>
+    <i>contact me: github-email-zachStuff@proton.me</i>
 </body>
 </html>
