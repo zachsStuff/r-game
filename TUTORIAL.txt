@@ -1,5 +1,6 @@
 NOTE: this may only work on windows but you can figure out how to work it on linux
 im going to show you how to run this game, you can run it without flask but thats lame,
+mutliple fetures stop working,
 and wont work without editing some files; witch is basically rape.
 Step 1 Setup:
     first you'll need to install python, just get the newest version.
